@@ -12,4 +12,34 @@
     width: 100%;
     text-align: center;
   }
+
+  .navbar-content {
+    padding-left: 250px;
+  }
+
+
+  .searchbar {
+    position: relative;
+    padding: 5px;
+    input {
+      border: 0;
+      border-radius: 2px;
+      height: 40px;
+      padding: 0 15px 0 40px;
+      width: 300px;
+      color: #000;
+    }
+    &:before {
+      font-family: "Material Design Icons";
+      content: '\f401';
+      font-size: 24px;
+      position: absolute;
+      color: #ccc;
+      top: 5px;
+      left: 5px;
+      line-height: 40px;
+      width: 40px;
+      text-align: center;
+    }
+  }
 }

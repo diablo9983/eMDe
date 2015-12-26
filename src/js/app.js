@@ -1,5 +1,5 @@
 $(document).ready(function(){
 
-  Waves.attach('aside a', ['']);
+  Waves.attach('#sidebar-menu a', ['']);
   Waves.init();
 });

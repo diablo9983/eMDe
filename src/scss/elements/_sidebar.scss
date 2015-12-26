@@ -8,6 +8,28 @@ aside {
   bottom: 0;
   box-shadow: 1px 0 5px rgba(0,0,0,0.2);
 
+  a {
+    color: #444;
+    &:hover {
+      color: #333;
+    }
+  }
+  .sidebar-account {
+    border-bottom: 1px solid #eee;
+    a {
+      display: block;
+      padding: 10px;
+    }
+    .content {
+      .username {
+        font-size: 16px;
+      }
+      .email {
+        font-size: 12px;
+      }
+    }
+  }
+
   #sidebar-menu {
     ul, li, a {
       list-style: none;
@@ -18,12 +40,10 @@ aside {
     }
     a {
       padding: 15px 35px;
-      color: #444;
       font-weight: bold;
       z-index: 1;
 
       &:hover {
-        color: #333;
         background-color: #f6f6f6;
       }
     }

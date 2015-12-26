@@ -1,0 +1,15 @@
+//- layout.jade
+doctype html
+html(lang=en)
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet", href="../plugins/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/emde.css")
+    block page_css
+  body
+    #wrapper
+      include _header.jade
+      include _sidebar.jade
+      #content
+        block content

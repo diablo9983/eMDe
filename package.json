@@ -1,0 +1,38 @@
+{
+  "name": "emde",
+  "version": "1.0.0",
+  "description": "Free premium admin control panel template with some touch of Material Design'",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diablo9983/eMDe.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "template",
+    "admin",
+    "bootstrap",
+    "theme",
+    "backend",
+    "responsive",
+    "material"
+  ],
+  "author": "diablo9983",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diablo9983/eMDe/issues"
+  },
+  "homepage": "https://github.com/diablo9983/eMDe#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
+  }
+}

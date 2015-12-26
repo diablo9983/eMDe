@@ -1,0 +1,32 @@
+{
+  "name": "eMDe",
+  "homepage": "http://www.bootstrap-hunter.com",
+  "authors": [
+    "diablo9983 <support@bootstrap-hunter.com>"
+  ],
+  "description": "Free premium admin control panel template with some touch of Material Design",
+  "main": [
+    "index.html"
+  ],
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "template",
+    "admin",
+    "bootstrap",
+    "theme",
+    "backend",
+    "responsive",
+    "material"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}

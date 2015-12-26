@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+body {
+  font-family: Roboto;
+  background-color: #f6f6f6;
+}
+
+a, a:active, a:focus, a:hover {
+  -moz-outline: none;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.waves-effect {
+  .waves-ripple {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &.waves-light {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+}

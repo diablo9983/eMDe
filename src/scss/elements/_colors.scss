@@ -1,0 +1,16 @@
+@mixin navbar($primary, $secondary, $primaryText, $secondaryText) {
+  background-color: $primary;
+  color: $primaryText;
+
+  .navbar-header {
+    background-color: $secondary;
+    color: $secondaryText;
+  }
+}
+
+@mixin sidebar() {
+
+}
+
+.navbar-indigo-pink { @include navbar(#303f9f,#ff4081,#ffffff,#ffffff); }
+.navbar-blue { @include navbar(#2196f3,#1976d2,#ffffff,#ffffff); }

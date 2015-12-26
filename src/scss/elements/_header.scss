@@ -1,0 +1,15 @@
+.emde-navbar {
+  position: relative;
+  z-index: 30;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+
+  .navbar-header {
+    width: 250px;
+  }
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+}

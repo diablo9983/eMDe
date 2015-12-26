@@ -30,7 +30,10 @@ module.exports = function (grunt) {
     jade: {
       compile: {
         options: {
-          pretty: true
+          pretty: true,
+          data: {
+            sidebar: grunt.file.readJSON("src/sidebar.json")
+          }
         },
         files: [{
           'dist/index.html': 'src/jade/index.jade'
@@ -49,7 +52,8 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          'dist/js/emde.js': 'src/js/emde.js'
+          'dist/js/emde.js': 'src/js/emde.js',
+          'dist/js/app.js': 'src/js/app.js'
         }
       }
     }

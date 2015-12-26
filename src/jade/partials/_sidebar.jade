@@ -1,2 +1,20 @@
 //- _sidebar.jade
 aside
+  .sidebar-account
+    a(href="#")
+      .avatar
+        img
+      .content
+        .username Bootstrap Hunter
+        .email support@bootstrap-hunter.com
+        
+  #sidebar-menu
+    ul
+      each first in sidebar
+        li
+          a(href=first.href)= first.title
+          if first.childrens
+            ul
+              each second in first.childrens
+                li
+                  a(href=second.href)= second.title

@@ -5,6 +5,7 @@ html(lang=en)
     meta(charset="UTF-8")
     title Document
     link(rel="stylesheet", href="../plugins/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../plugins/waves/waves.min.css")
     link(rel="stylesheet", href="css/emde.css")
     block page_css
   body
@@ -13,3 +14,9 @@ html(lang=en)
       include _sidebar.jade
       #content
         block content
+        
+      script(src="../plugins/jquery/jquery-2.1.4.min.js")
+      script(src="../plugins/bootstrap/js/bootstrap.min.js")
+      script(src="../plugins/waves/waves.min.js")
+      script(src="js/emde.js")
+      script(src="js/app.js")

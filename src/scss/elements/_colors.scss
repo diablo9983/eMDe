@@ -12,7 +12,7 @@
 
 }
 
-.navbar-indigo-pink { @include navbar(#303f9f,#ff4081,#ffffff,#ffffff); }
-.navbar-pink-indigo { @include navbar(#ff4081,#303f9f,#ffffff,#ffffff); }
-.navbar-indigo { @include navbar(#303f9f,#303f9f,#ffffff,#ffffff); }
-.navbar-blue { @include navbar(#2196f3,#2196f3,#ffffff,#ffffff); }
+.navbar-indigo-pink { @include navbar(material-color('indigo','500'),material-color('pink','500'),#ffffff,#ffffff); }
+.navbar-pink-indigo { @include navbar(material-color('pink','500'),material-color('indigo','500'),#ffffff,#ffffff); }
+.navbar-indigo { @include navbar(material-color('indigo','500'),material-color('indigo','500'),#ffffff,#ffffff); }
+.navbar-blue { @include navbar(material-color('blue','500'),material-color('blue','500'),#ffffff,#ffffff); }

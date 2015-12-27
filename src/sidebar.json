@@ -19,6 +19,19 @@
   "2": {
     "title": "Link 3",
     "href": "#",
-    "icon": "mdi mdi-layers"
+    "icon": "mdi mdi-layers",
+    "childrens": [{
+      "title": "Children 1",
+      "href": "#"
+    },{
+      "title": "Children 2",
+      "href": "#"
+    },{
+      "title": "Children 3",
+      "href": "#"
+    },{
+      "title": "Children 4",
+      "href": "#"
+    }]
   }
 }

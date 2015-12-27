@@ -55,7 +55,11 @@ module.exports = function (grunt) {
     uglify: {
       js: {
         options: {
-          sourceMap: true
+          screwIE8: true,
+          sourceMap: true,
+          mangle: {
+            except: ['$','Sidebar']
+          }
         },
         files: {
           'dist/js/emde.js': 'src/js/emde.js',

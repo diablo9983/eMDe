@@ -138,7 +138,7 @@
             relativeX = relativeX >= 0 ? relativeX : 0;
             relativeY = relativeY >= 0 ? relativeY : 0;
 
-            var scale     = 'scale(' + ((element.clientWidth / 100) * 3) + ')';
+            var scale     = 'scale(' + ((element.clientWidth / 100) * 2) + ')';
             var translate = 'translate(0,0)';
 
             if (velocity) {

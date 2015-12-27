@@ -76,5 +76,21 @@ aside {
       padding: 8px 35px 8px 50px;
       font-weight: normal;
     }
+
+    li {
+      > a {
+
+      }
+      > ul {
+        display: none;
+      }
+      &.active {
+        > a {
+          > i:last-child {
+            @include rotate(180deg);
+          }
+        }
+      }
+    }
   }
 }

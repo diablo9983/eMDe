@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
-  Waves.attach('#sidebar-menu a', ['']);
+  Waves.attach('.emde-sidebar a');
   Waves.init();
+
+  $.Sidebar.init();
 });

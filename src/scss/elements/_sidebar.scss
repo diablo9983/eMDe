@@ -66,6 +66,9 @@ aside {
           margin-right: 15px;
           vertical-align: top;
         }
+        &:last-child {
+          @include transition(transform 0.5s);
+        }
       }
 
       &:hover {

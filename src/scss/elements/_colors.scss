@@ -13,4 +13,6 @@
 }
 
 .navbar-indigo-pink { @include navbar(#303f9f,#ff4081,#ffffff,#ffffff); }
-.navbar-blue { @include navbar(#2196f3,#1976d2,#ffffff,#ffffff); }
+.navbar-pink-indigo { @include navbar(#ff4081,#303f9f,#ffffff,#ffffff); }
+.navbar-indigo { @include navbar(#303f9f,#303f9f,#ffffff,#ffffff); }
+.navbar-blue { @include navbar(#2196f3,#2196f3,#ffffff,#ffffff); }

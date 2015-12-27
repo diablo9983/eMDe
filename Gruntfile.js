@@ -15,6 +15,12 @@ module.exports = function (grunt) {
       js: {
         files: ["src/js/**/*.js"],
         tasks: ["uglify"]
+      },
+      livereload: {
+        files: ['dist/**/*'],
+        options: {
+          livereload: true
+        }
       }
     },
     sass: {

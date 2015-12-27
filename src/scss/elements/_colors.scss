@@ -1,18 +1,27 @@
-@mixin navbar($primary, $secondary, $primaryText, $secondaryText) {
-  background-color: $primary;
-  color: $primaryText;
+@mixin color-variant($primary, $accent, $primaryText, $accentText) {
+  .emde-navbar {
+    background-color: $primary;
+    color: $primaryText;
 
-  .navbar-header {
-    background-color: $secondary;
-    color: $secondaryText;
+    .navbar-header {
+      background-color: $accent;
+      color: $accentText;
+    }
+  }
+
+  .panel {
+    &.panel-primary {
+      @include panel-variant($primary, $primaryText);
+    }
+    &.panel-accent {
+      @include panel-variant($accent, $accentText);
+    }
   }
 }
 
-@mixin sidebar() {
-
-}
-
-.navbar-indigo-pink { @include navbar(material-color('indigo','500'),material-color('pink','500'),#ffffff,#ffffff); }
-.navbar-pink-indigo { @include navbar(material-color('pink','500'),material-color('indigo','500'),#ffffff,#ffffff); }
-.navbar-indigo { @include navbar(material-color('indigo','500'),material-color('indigo','500'),#ffffff,#ffffff); }
-.navbar-blue { @include navbar(material-color('blue','500'),material-color('blue','500'),#ffffff,#ffffff); }
+.emde-indigo-pink { @include color-variant(material-color('indigo','500'),material-color('pink','500'),#ffffff,#ffffff); }
+.emde-pink-indigo { @include color-variant(material-color('pink','500'),material-color('indigo','500'),#ffffff,#ffffff); }
+.emde-indigo-amber { @include color-variant(material-color('indigo','500'),material-color('amber','600'),#ffffff,#ffffff); }
+.emde-amber-indigo { @include color-variant(material-color('amber','600'),material-color('indigo','500'),#ffffff,#ffffff); }
+.emde-grey-red { @include color-variant(material-color('blue-grey','600'),material-color('red','600'),#ffffff,#ffffff); }
+.emde-red-grey { @include color-variant(material-color('red','600'),material-color('blue-grey','600'),#ffffff,#ffffff); }

@@ -1,36 +1,18 @@
 {
   "0": {
-    "title": "Link 1",
+    "title": "Dashboard",
     "href": "#",
-    "icon": "mdi mdi-account"
+    "icon": "mdi mdi-gauge"
   },
   "1": {
-    "title": "Link 2",
+    "title": "UI Components",
     "href": "#",
-    "icon": "mdi mdi-alarm-check",
+    "icon": "mdi mdi-palette",
     "childrens": [{
-      "title": "Children 1",
-      "href": "#"
+      "title": "Panels",
+      "href": "/pages/panels.html"
     },{
       "title": "Children 2",
-      "href": "#"
-    }]
-  },
-  "2": {
-    "title": "Link 3",
-    "href": "#",
-    "icon": "mdi mdi-layers",
-    "childrens": [{
-      "title": "Children 1",
-      "href": "#"
-    },{
-      "title": "Children 2",
-      "href": "#"
-    },{
-      "title": "Children 3",
-      "href": "#"
-    },{
-      "title": "Children 4",
       "href": "#"
     }]
   }

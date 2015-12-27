@@ -39,11 +39,16 @@ aside {
       .email {
         font-size: 12px;
       }
+      i {
+        font-size: 18px;
+        float: right;
+      }
     }
   }
 
+  .sidebar-account-menu,
   #sidebar-menu {
-    ul, li, a {
+    &, ul, li, a {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -66,13 +71,32 @@ aside {
           margin-right: 15px;
           vertical-align: top;
         }
-        &:last-child {
-          @include transition(transform 0.5s);
-        }
       }
 
       &:hover {
         background-color: #f6f6f6;
+      }
+    }
+  }
+
+  .sidebar-account-menu {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2px;
+    display: none;
+  }
+  .sidebar-account.open {
+    i.mdi-menu-down {
+      @include rotate(180deg);
+    }
+  }
+
+  #sidebar-menu {
+    a {
+      i {
+        &:last-child {
+          @include transition(transform 0.5s);
+        }
       }
     }
     ul ul a {
@@ -81,9 +105,6 @@ aside {
     }
 
     li {
-      > a {
-
-      }
       > ul {
         display: none;
       }

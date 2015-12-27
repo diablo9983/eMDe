@@ -9,6 +9,17 @@
     }
   }
 
+  .emde-sidebar {
+    li {
+      a i:first-child {
+        color: $accent;
+      }
+      &.active a i:first-child {
+        color: $primary;
+      }
+    }
+  }
+
   .panel {
     &.panel-primary {
       @include panel-variant($primary, $primaryText);

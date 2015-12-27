@@ -5,7 +5,7 @@
     "icon": "mdi mdi-gauge"
   },
   "1": {
-    "title": "UI Components",
+    "title": "UI Elements",
     "href": "#",
     "icon": "mdi mdi-palette",
     "childrens": [{
@@ -15,5 +15,25 @@
       "title": "Children 2",
       "href": "#"
     }]
+  },
+  "2": {
+    "title": "UI Components",
+    "href": "#",
+    "icon": "mdi mdi-invert-colors"
+  },
+  "3": {
+    "title": "Forms",
+    "href": "#",
+    "icon": "mdi mdi-pencil-box-outline"
+  },
+  "4": {
+    "title": "Tables",
+    "href": "#",
+    "icon": "mdi mdi-table"
+  },
+  "5": {
+    "title": "Pages",
+    "href": "#",
+    "icon": "mdi mdi-file-check"
   }
 }

@@ -3,7 +3,7 @@ aside
   .sidebar-account
     a(href="#")
       .avatar.pull-left
-        img
+        img(src="img/avatar1.jpg")
       .content
         .username Bootstrap Hunter
         .email bootstrap@hunter.com
@@ -12,9 +12,12 @@ aside
     ul
       each first in sidebar
         li
-          a(href=first.href)= first.title
+          a(href=first.href)
+            if first.icon
+              i(class=first.icon)
+            span= first.title
             if first.childrens
-              i.mdi.mdi-menu-down
+              i.mdi.mdi-menu-down.pull-right
           if first.childrens
             ul
               each second in first.childrens

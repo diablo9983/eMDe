@@ -1,11 +1,13 @@
 {
   "0": {
     "title": "Link 1",
-    "href": "#"
+    "href": "#",
+    "icon": "mdi mdi-account"
   },
   "1": {
     "title": "Link 2",
     "href": "#",
+    "icon": "mdi mdi-alarm-check",
     "childrens": [{
       "title": "Children 1",
       "href": "#"
@@ -16,6 +18,7 @@
   },
   "2": {
     "title": "Link 3",
-    "href": "#"
+    "href": "#",
+    "icon": "mdi mdi-layers"
   }
 }

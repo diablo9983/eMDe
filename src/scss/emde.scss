@@ -1,9 +1,12 @@
-@import '../../plugins/bootstrap/scss/bootstrap/variables';
-@import '../../plugins/bootstrap/scss/bootstrap/mixins';
-@import '../../plugins/materialdesignicons/scss/variables';
-@import '../../plugins/materialdesignicons/scss/icons';
+@import '../../dist/plugins/bootstrap/scss/bootstrap/variables';
+@import '../../dist/plugins/bootstrap/scss/bootstrap/mixins';
+@import '../../dist/plugins/materialdesignicons/scss/variables';
+@import '../../dist/plugins/materialdesignicons/scss/icons';
+@import 'sass-material-colors/sass-material-colors';
 @import 'elements/base';
+@import 'elements/panels';
 @import 'elements/header';
-@import "elements/sidebar";
+@import 'elements/sidebar';
+@import 'elements/content';
 
 @import 'elements/colors';

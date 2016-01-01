@@ -1,0 +1,57 @@
+.input {
+  .form-control {
+    box-shadow: none !important;
+    border-color: #ddd;
+    border-radius: 0;
+    padding: 9px 12px 7px;
+    height: auto;
+
+    &[disabled] {
+      border-color: #e6e6e6 !important;
+      background-color: #f6f6f6;
+    }
+  }
+
+  &.md {
+    position: relative;
+    padding: 10px 0 0;
+    label {
+      position: absolute;
+      z-index: 1;
+      font-weight: normal;
+      top: 19px;
+      margin: 0;
+      left: 0;
+      color: #888;
+
+      @include transition(transform 0.2s, color 0.2s, font-size 0.2s);
+
+      &.active {
+        font-size: 11px;
+
+        @include translate(0,-19px);
+      }
+    }
+    .form-control {
+      position: relative;
+      z-index: 2;
+      background-color: transparent;
+      border-width: 0 0 1px 0;
+      padding: 9px 0 7px;
+
+      @include placeholder(#ccc);
+      &:active, &:focus {
+        border-bottom-width: 1.5px;
+      }
+      &[disabled] {
+        color: #999;
+      }
+    }
+
+    &.disabled, .form-control[disabled] + {
+      label {
+        color: #aaa !important;
+      }
+    }
+  }
+}

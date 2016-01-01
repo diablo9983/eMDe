@@ -49,4 +49,24 @@
 
   $.EmdeSidebar = new EmdeSidebar, $.EmdeSidebar.Constructor = EmdeSidebar
 
+  $('.input.md').each(function() {
+    var cont = $(this);
+    var input = $(this).children('input');
+    var label = $(this).children('label');
+
+    if(input.val().trim() != '' || (input.attr('placeholder') !== undefined && input.attr('placeholder').trim() != '')) label.addClass('active');
+
+    if(input.is(':disabled')) cont.addClass('disabled');
+
+    input.on('focus', function() {
+      cont.addClass('active');
+      label.addClass('active');
+    }).on('blur', function() {
+      if(input.val().trim() == '' && input.attr('placeholder') === undefined) {
+        label.removeClass('active');
+      }
+      cont.removeClass('active');
+    });
+  });
+
 })(window.jQuery);

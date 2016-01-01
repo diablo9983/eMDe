@@ -24,7 +24,14 @@
   "3": {
     "title": "Forms",
     "href": "#",
-    "icon": "mdi mdi-pencil-box-outline"
+    "icon": "mdi mdi-pencil-box-outline",
+    "childrens": [{
+      "title": "Basic Forms",
+      "href": "/pages/forms_basic.html"
+    },{
+      "title": "Advanced Forms",
+      "href": "/pages/forms_advanced.html"
+    }]
   },
   "4": {
     "title": "Tables",

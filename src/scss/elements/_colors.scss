@@ -20,6 +20,22 @@
     }
   }
 
+  .input {
+    .form-control {
+      &:active, &:focus {
+        border-color: $accent;
+      }
+    }
+
+    &.md {
+      &.active, input:focus + {
+        label {
+          color: $accent;
+        }
+      }
+    }
+  }
+
   .panel {
     &.panel-primary {
       @include panel-variant($primary, $primaryText);

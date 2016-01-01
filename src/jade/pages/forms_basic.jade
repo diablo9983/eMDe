@@ -1,0 +1,58 @@
+//- forms_basic.jade
+extends ../partials/_layout.jade
+
+block content
+  .row
+    .col-xs-12.col-md-6
+      .panel.panel-primary
+        .panel-heading
+          h3.panel-title Default style
+        .panel-body
+          .row
+            .col-xs-12.col-md-6.form-group
+              .input
+                label(for="df_1") First Name  
+                input#df_1.form-control
+            .col-xs-12.col-md-6.form-group
+              .input
+                label(for="df_2") Last Name
+                input#df_2.form-control
+            .col-xs-12.form-group 
+              .input
+                label(for="df_4") Password
+                input#df_4.form-control(type="password")
+            .col-xs-12.form-group
+              .input
+                label(for="df_5") E-mail
+                input#df_5.form-control(type="email")
+            .col-xs-12.form-group
+              .input
+                label(for="df_3") Disabled
+                input#df_3.form-control(disabled)
+          
+    .col-xs-12.col-md-6
+      .panel.panel-accent
+        .panel-heading
+          h3.panel-title Material Design style
+        .panel-body
+          .row
+            .col-xs-12.col-md-6.form-group
+              .input.md
+                label(for="mdf_1") First Name  
+                input#mdf_1.form-control(placeholder="placeholder")
+            .col-xs-12.col-md-6.form-group
+              .input.md
+                label(for="mdf_2") Last Name
+                input#mdf_2.form-control
+            .col-xs-12.form-group
+              .input.md
+                label(for="mdf_4") Password
+                input#mdf_4.form-control(type="password")
+            .col-xs-12.form-group
+              .input.md
+                label(for="mdf_5") E-mail
+                input#mdf_5.form-control(type="email")
+            .col-xs-12.form-group
+              .input.md
+                label(for="mdf_3") Disabled
+                input#mdf_3.form-control(disabled value="I'm not editable")

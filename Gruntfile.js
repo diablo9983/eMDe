@@ -25,7 +25,7 @@ module.exports = function (grunt) {
     },
     sass: {
       options: {
-        sourceMap: true
+        sourceMap: false
       },
       dist: {
         files: {
@@ -56,9 +56,10 @@ module.exports = function (grunt) {
       js: {
         options: {
           screwIE8: true,
-          sourceMap: true,
+          sourceMap: false,
+          beautify: true,
           mangle: {
-            except: ['$','Sidebar']
+            except: ['$','EmdeSidebar']
           }
         },
         files: {

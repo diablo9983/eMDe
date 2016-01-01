@@ -1,40 +1,45 @@
 !(function($){
   "use strict";
 
-  var Sidebar = function() {
+  var EmdeSidebar = function() {
+    this.options = {
+      slideSpeed: 200, // Sliding animation speed
+      allowOneOnly: true // Allow only one submenu to be opened
+    };
     this.menuItem = $('#sidebar-menu li > a');
     this.sidebarMenu = $('#sidebar-menu');
     this.sidebarAccount = $('.sidebar-account');
   }
-  Sidebar.prototype.toggleItem = function(element,action) {
+  EmdeSidebar.prototype.toggleItem = function(element,action) {
     if(!element.length || !this.sidebarMenu.find(element).length || $.inArray(action,['open','close']) === -1) return;
     if(element.is('a')) element = element.parent('li');
-    var $ul = element.children('ul');
-    if($ul.length == 0) return;
+    var ul = element.children('ul');
+    if(ul.length == 0) return;
     element[(action === 'open' ? 'add' : 'remove') + 'Class'].call(element,'active');
-    $ul['slide' + (action === 'open' ? 'Down' : 'Up')].call($ul);
+    ul['slide' + (action === 'open' ? 'Down' : 'Up')].call(ul, this.options.slideSpeed);
   }
-  Sidebar.prototype.closeItem = function(element) {
+  EmdeSidebar.prototype.closeItem = function(element) {
     this.toggleItem(element,'close');
   }
-  Sidebar.prototype.openItem = function(element) {
+  EmdeSidebar.prototype.openItem = function(element) {
     this.toggleItem(element,'open');
   }
-  Sidebar.prototype.toggleAccountMenu = function() {
+  EmdeSidebar.prototype.toggleAccountMenu = function() {
     var menu = this.sidebarAccount.children('.sidebar-account-menu');
     if(this.sidebarAccount.hasClass('open')) {
       this.sidebarAccount.removeClass('open');
-      menu.slideUp();
+      menu.slideUp(this.options.slideSpeed);
     } else {
       this.sidebarAccount.addClass('open');
-      menu.slideDown();
+      menu.slideDown(this.options.slideSpeed);
     }
   }
-  Sidebar.prototype.init = function () {
+  EmdeSidebar.prototype.init = function (options) {
     var $this = this;
+    $.extend($this.options,options);
     $this.menuItem.on('click', function() {
       var $parent = $(this).parent('li');
-      $this.closeItem($parent.siblings('li.active'));
+      if($this.options.allowOneOnly) $this.closeItem($parent.siblings('li.active'));
       $this.toggleItem($parent,($parent.hasClass('active') ? 'close' : 'open'));
     });
     $this.sidebarAccount.children('a').on('click', function(){
@@ -42,6 +47,6 @@
     });
   }
 
-  $.Sidebar = new Sidebar, $.Sidebar.Constructor = Sidebar
+  $.EmdeSidebar = new EmdeSidebar, $.EmdeSidebar.Constructor = EmdeSidebar
 
 })(window.jQuery);

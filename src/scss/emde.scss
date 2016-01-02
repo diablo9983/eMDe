@@ -1,8 +1,8 @@
-@import '../../dist/plugins/bootstrap/scss/bootstrap/variables';
-@import '../../dist/plugins/bootstrap/scss/bootstrap/mixins';
-@import '../../dist/plugins/materialdesignicons/scss/variables';
-@import '../../dist/plugins/materialdesignicons/scss/icons';
-@import 'sass-material-colors/sass-material-colors';
+@import '../../dist/plugins/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '../../dist/plugins/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import '../../dist/plugins/mdi/scss/variables';
+@import '../../dist/plugins/mdi/scss/icons';
+@import '../../dist/plugins/sass-material-colors/sass/sass-material-colors';
 @import 'elements/base';
 @import 'elements/forms';
 @import 'elements/panels';

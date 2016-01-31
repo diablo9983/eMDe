@@ -1,4 +1,4 @@
-# eMDe <small style="font-size:22px;">- Free premium admin template with some touch of Material Design</small>
+# eMDe
 
 Currently no documentation is provided here.
 

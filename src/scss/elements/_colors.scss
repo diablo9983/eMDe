@@ -27,7 +27,10 @@
       }
     }
 
-    &.md {
+    &.emde {
+      &:after {
+        background-color: $accent;
+      }
       &.active, input:focus + {
         label {
           color: $accent;

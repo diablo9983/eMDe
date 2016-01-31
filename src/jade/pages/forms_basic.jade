@@ -12,7 +12,7 @@ block content
             .col-xs-12.col-md-6.form-group
               .input
                 label(for="df_1") First Name  
-                input#df_1.form-control
+                input#df_1.form-control(placeholder="placeholder")
             .col-xs-12.col-md-6.form-group
               .input
                 label(for="df_2") Last Name
@@ -28,7 +28,7 @@ block content
             .col-xs-12.form-group
               .input
                 label(for="df_3") Disabled
-                input#df_3.form-control(disabled)
+                input#df_3.form-control(disabled value="I'm not editable")
           
     .col-xs-12.col-md-6
       .panel.panel-accent
@@ -37,22 +37,39 @@ block content
         .panel-body
           .row
             .col-xs-12.col-md-6.form-group
-              .input.md
+              .input.emde
                 label(for="mdf_1") First Name  
                 input#mdf_1.form-control(placeholder="placeholder")
             .col-xs-12.col-md-6.form-group
-              .input.md
+              .input.emde
                 label(for="mdf_2") Last Name
                 input#mdf_2.form-control
             .col-xs-12.form-group
-              .input.md
+              .input.emde
                 label(for="mdf_4") Password
                 input#mdf_4.form-control(type="password")
             .col-xs-12.form-group
-              .input.md
+              .input.emde
                 label(for="mdf_5") E-mail
                 input#mdf_5.form-control(type="email")
             .col-xs-12.form-group
-              .input.md
+              .input.emde
                 label(for="mdf_3") Disabled
                 input#mdf_3.form-control(disabled value="I'm not editable")
+
+  .row
+    .col-xs-12
+      .panel.panel-primary
+        .panel-heading
+          h3.panel-title Select
+        .panel-body
+          .row
+            .col-xs-12.col-md-6
+              select(data-emde="select")
+                option(value="1") Option One
+                option(value="2") Option Two
+                option(value="3") Option Three
+                option(value="4") Option Four
+                option(value="5") Option Five
+            .col-xs-12.col-md-6
+              

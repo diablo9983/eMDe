@@ -4,6 +4,12 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     watch: {
+      grunt: {
+        files: ["Gruntfile.js"],
+        options: {
+          reload: true
+        }
+      },
       css: {
         files: ["src/scss/*.scss", "src/scss/elements/*.scss"],
         tasks: ["sass"]
@@ -63,7 +69,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'dist/js/emde.js': 'src/js/emde.js',
+          'dist/js/emde.js': ['src/js/emde.js','src/js/emde.dropdown.js','src/js/emde.forms.js'],
           'dist/js/app.js': 'src/js/app.js'
         }
       }

@@ -1,5 +1,19 @@
+var Emde = {};
+
+Emde.guid = (function() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return function() {
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+           s4() + '-' + s4() + s4() + s4();
+  };
+})();
+
 !(function($){
-  "use strict";
+  "use strict";  
 
   var EmdeSidebar = function() {
     this.options = {
@@ -48,25 +62,5 @@
   }
 
   $.EmdeSidebar = new EmdeSidebar, $.EmdeSidebar.Constructor = EmdeSidebar
-
-  $('.input.md').each(function() {
-    var cont = $(this);
-    var input = $(this).children('input');
-    var label = $(this).children('label');
-
-    if(input.val().trim() != '' || (input.attr('placeholder') !== undefined && input.attr('placeholder').trim() != '')) label.addClass('active');
-
-    if(input.is(':disabled')) cont.addClass('disabled');
-
-    input.on('focus', function() {
-      cont.addClass('active');
-      label.addClass('active');
-    }).on('blur', function() {
-      if(input.val().trim() == '' && input.attr('placeholder') === undefined) {
-        label.removeClass('active');
-      }
-      cont.removeClass('active');
-    });
-  });
 
 })(window.jQuery);
